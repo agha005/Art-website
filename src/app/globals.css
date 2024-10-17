@@ -2,26 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Container for the background image */
+.bg-image-class {
+  position: absolute;
+  z-index: 1; /* Content will be above the background */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* Pseudo-element to set the background image */
+.bg-image-class::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
+  background-image: url('../Assets/images/apple.jpeg'); /* Correct path */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(3px);
+  opacity: 0.4;
+}
+
+
+/* Transparent section of your content */
+.transparent-content {
+  background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity to make it semi-transparent */
+  z-index: 1; /* Ensure this content is above the background */
+}
+
+/* Example text with moving animation */
+#moving-text {
+  overflow: hidden; /* Hide overflow to create a seamless look */
+  white-space: nowrap;
+}
+
+.moving-con {
+  display: inline-block;
+  white-space: nowrap;
+  animation: movingIcon 7s linear infinite;
+}
+
+@keyframes movingIcon {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* Keyframes for the individual letter wave animation */
+@keyframes wave {
+  0% {
+    transform: translateY(0); /* Initial position */
+  }
+  50% {
+    transform: translateY(-15px); /* Wave up */
+  }
+  100% {
+    transform: translateY(0); /* Back to initial position */
+  }
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+/* Apply the wave animation to each letter */
+.animate-wave {
+  display: inline-block;
+  animation: wave 1.5s ease-in-out infinite; /* Loop the wave animation */
+}
+
+/* Spinner animation for the circular loader */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
   }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+}
+
+.neon {
+  text-shadow: 0 0 2px #00FFFF, 0 0 1px #00FFFF, 0 0 4px #00FFFF, 
+               0 0 60px #00FFFF, 0 0 50px #00FFFF;
 }
