@@ -2,27 +2,27 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
 
-// Array of testimonials
+// Array of testimonials with art-related reviews
 const testimonials = [
   {
     id: 1,
     quote:
-      "Tech Tonic Solutions transformed our website and improved our online presence. The team was professional, efficient, and exceeded our expectations!",
-    author: "Sarah, E-commerce Business Owner",
+      "Artify Studio captured the essence of our brand perfectly. The custom illustrations brought our vision to life in a way we never imagined!",
+    author: "Jessica, Art Director at a Design Agency",
     rating: 5,
   },
   {
     id: 2,
     quote:
-      "Their digital marketing strategies have significantly increased our traffic and conversion rates. Highly recommended!",
-    author: "Mike, CEO of a Startup",
+      "Their graphic design work for our exhibition was absolutely stunning. The attention to detail and creative execution were top-notch.",
+    author: "Liam, Curator of Contemporary Art Museum",
     rating: 5,
   },
   {
     id: 3,
     quote:
-      "The team at Tech Tonic Solutions delivered exceptional results for our WordPress site. Great communication and technical expertise.",
-    author: "Emily, Freelance Photographer",
+      "The team at Artify transformed our digital presence with their incredible animations. Our social media engagement has skyrocketed since!",
+    author: "Olivia, Social Media Manager at an Art Gallery",
     rating: 5,
   },
 ];
@@ -37,7 +37,7 @@ const Testimonials = () => (
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="bg-orange-200 p-6 rounded-lg shadow-lg"
+            className="bg-[#b3ebe8] p-6 rounded-lg shadow-lg"
           >
             <p className="text-lg mb-4">{testimonial.quote}</p>
             <p className="font-bold mb-2">{testimonial.author}</p>
