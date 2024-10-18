@@ -2,36 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Container for the background image */
-.bg-image-class {
-  position: absolute;
-  z-index: 1; /* Content will be above the background */
-}
-
-/* Pseudo-element to set the background image */
-.bg-image-class::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -10;
-  background-image: url('../Assets/images/apple.jpeg'); /* Correct path */
-  background-attachment: fixed;
+/* global.css */
+.bg-fixed {
+  background-image: url('/src/Assets/images/animebg.webp'); /* Ensure the path is correct */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(3px);
-  opacity: 0.4;
+  background-attachment: fixed; /* Ensures the image stays fixed while the content scrolls */
 }
 
 
-/* Transparent section of your content */
-.transparent-content {
-  background-color: rgba(255, 255, 255, 0.2); /* Adjust opacity to make it semi-transparent */
-  z-index: 1; /* Ensure this content is above the background */
-}
+/* @keyframes backgroundMove {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+} */
+
 
 /* Example text with moving animation */
 #moving-text {

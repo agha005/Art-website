@@ -2,30 +2,30 @@
 import Image from "next/image";
 import { useState } from "react";
 import "aos/dist/aos.css";
-import { Leader, Lead, Lacker } from "@/Assets/images/index"; // Ensure these paths point to your actual images
+import { Pro1, Pro2, Pro3 } from "@/Assets/images/index"; // Ensure these paths point to your actual images
 
 // Sample data for tabs
 const tabsData = [
   {
     id: 1,
-    title: "Design",
+    title: "2D Art",
     description:
-      "We collaborate closely with you to translate your ideas into a tangible design that aligns with your vision and objectives. Our expert design team takes a user-centered approach, ensuring that every aspect of the design reflects both creativity and functionality",
-    image: Leader, // Replace with actual image import or URL
+      "Step into the world of vibrant 2D art that speaks directly to anime fans and gamers alike. From iconic character designs to dynamic action scenes, we craft artwork that captures the essence of your favorite anime and gaming styles. Whether it's for your next anime-inspired project or a fan-favorite gaming character, our illustrations are designed to immerse you in colorful, captivating worlds.",
+    image: Pro1, // Replace with actual image import or URL
   },
   {
     id: 2,
-    title: "Project",
+    title: "3D Art",
     description:
-      "Our experienced project management team takes charge of keeping your project organized, on schedule, and within budget. We understand the importance of timely delivery, which is why we focus on clear communication, regular updates, and proactive problem-solving.",
-    image: Lead, // Replace with actual image import or URL
+      "For gaming enthusiasts and fans of 3D animation, our 3D art brings characters and worlds to life with incredible detail. Whether you're a Sonic fan dreaming of high-speed adventures or a gamer seeking to level up your visual experience, we create stunning 3D models, environments, and animations that push the boundaries of imagination. Get ready to experience your favorite characters in a whole new dimension!",
+    image: Pro2, // Replace with actual image import or URL
   },
   {
     id: 3,
-    title: "Execution",
+    title: "Vtuber",
     description:
-      "We support you throughout the entire project lifecycle, from planning and initiation to successful completion. Our team is hands-on during the execution phase, ensuring that every task is carried out to the highest standard. We manage all aspects of production and design implementation",
-    image: Lacker, // Replace with actual image import or URL
+      "Become the next virtual sensation with custom VTuber avatars that resonate with anime and gaming culture. Whether you're channeling the energetic style of Sonic or the expressive charm of your favorite anime characters, our VTuber designs are made to captivate audiences and bring out your virtual personality. Perfect for streaming, gaming, and live interactions—your audience won’t be able to look away!",
+    image: Pro3, // Replace with actual image import or URL
   },
 ];
 
@@ -41,7 +41,7 @@ const TabsWithImages = () => {
             key={tab.id}
             className={`cursor-pointer text-2xl lg:text-4xl font-bold my-3 transition-colors duration-300 ${
               activeTab.id === tab.id
-                ? "text-orange-500 border-l-4 border-orange-500 pl-4"
+                ? "text-[#3bc6bf] border-l-4 border-[#3bc6bf] pl-4"
                 : "text-gray-400"
             }`}
           >

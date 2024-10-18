@@ -10,12 +10,12 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="absolute top-4 left-0 w-full bg-transparent text-orange-400 px-8 flex items-center justify-between z-50">
+    <nav className="absolute top-4 left-0 w-full bg-transparent text-[#56ece5] px-8 flex items-center justify-between z-50">
       {/* Hamburger menu button (only visible on mobile) */}
       <div className="md:hidden flex items-center">
         <button
           onClick={toggleNav}
-          className="text-orange-400 focus:outline-none"
+          className="text-[#56ece5] focus:outline-none"
         >
           {navOpen ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
         </button>
@@ -69,10 +69,10 @@ const Navbar = () => {
       >
         {/* Close Button inside the mobile menu */}
         <div className="flex justify-between items-center w-full mb-8">
-          <h2 className="text-3xl text-orange-400 font-bold">Menu</h2>
+          <h2 className="text-3xl text-[#56ece5] font-bold">Menu</h2>
           <button
             onClick={toggleNav}
-            className="text-orange-400 focus:outline-none"
+            className="text-[#56ece5] focus:outline-none"
           >
             <AiOutlineClose size={30} />
           </button>
@@ -82,7 +82,7 @@ const Navbar = () => {
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
             href="#page-3"
-            className="text-orange-300 hover:text-orange-500"
+            className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
             Work
@@ -91,7 +91,7 @@ const Navbar = () => {
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
             href="#"
-            className="text-orange-300 hover:text-orange-500"
+            className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
             Portfolio
@@ -100,7 +100,7 @@ const Navbar = () => {
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
             href="#"
-            className="text-orange-300 hover:text-orange-500"
+            className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
             Contact
@@ -109,7 +109,7 @@ const Navbar = () => {
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
             href="#"
-            className="text-orange-300 hover:text-orange-500"
+            className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
             About

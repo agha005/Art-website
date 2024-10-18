@@ -1,14 +1,17 @@
 import { Metadata } from "next";
-import { openGraphImage, twitterImage } from "../Assets/images/index";
+import { openGraphImage } from "../Assets/images/index";
 
 export const metadata: Metadata = {
-  title: "Tech Tonic Solutions | Innovative Technology Solutions for Your Business",
-  description: "Tech Tonic Solutions provides cutting-edge technology solutions to enhance your business growth with custom software, web development, and IT consulting.",
+  title:
+    "Tech Tonic Solutions | Innovative Technology Solutions for Your Business",
+  description:
+    "Tech Tonic Solutions provides cutting-edge technology solutions to enhance your business growth with custom software, web development, and IT consulting.",
   openGraph: {
     type: "website",
     url: "https://techtonicsolutions.online",
     title: "Tech Tonic Solutions | Innovative Technology Solutions",
-    description: "Discover top-notch technology solutions tailored to your business needs. From web development to IT consulting, we deliver expertise and results.",
+    description:
+      "Discover top-notch technology solutions tailored to your business needs. From web development to IT consulting, we deliver expertise and results.",
     siteName: "Tech Tonic Solutions",
     images: [
       {
@@ -22,13 +25,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Tech Tonic Solutions | Innovative Technology Solutions",
-    description: "Empowering your business with cutting-edge technology solutions.",
-    images: [
-      {
-        url: twitterImage.src, // Use the correct path
-        alt: "Tech Tonic Solutions Logo",
-      },
-    ],
+    description:
+      "Empowering your business with cutting-edge technology solutions.",
   },
   icons: {
     icon: "/favicon.ico",
@@ -38,7 +36,7 @@ export const metadata: Metadata = {
     canonical: "https://techtonicsolutions.online",
   },
   other: {
-    'X-UA-Compatible': 'IE=edge',
-    'robots': 'index, follow',
+    "X-UA-Compatible": "IE=edge",
+    robots: "index, follow",
   },
 };

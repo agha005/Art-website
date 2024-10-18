@@ -2,50 +2,65 @@
 import React from "react";
 import Image from "next/image";
 import {
-  Consult,
-  Digital,
-  Ecom,
-  Graphic,
-  Web,
-  Staff,
-} from "@/Assets/images/index";
+  Cat1,
+  Cat2,
+  Cat3,
+  Cat4,
+  Cat5,
+  Cat6,
+  Cat7,
+  Cat8,
+  // AnimeCharacters,
+} from "@/Assets/images/index"; // Ensure you have the correct image paths
 
 const cards = [
   {
-    title: "Web Development",
+    title: "2D Art",
     description:
-      "We create dynamic and responsive websites using React, Next.js, and WordPress to ensure top-notch user experiences. Our solutions are tailored to meet your business needs and deliver exceptional performance.",
-    image: Web,
+      "Explore our stunning 2D art pieces, perfect for illustrations, character design, and game assets. We bring creativity and imagination to life with unique, hand-drawn designs.",
+    image: Cat1.src,
   },
   {
-    title: "E-Commerce Solutions",
+    title: "3D Art",
     description:
-      "We build powerful e-commerce platforms that drive sales, utilizing technologies like WooCommerce, Shopify, and custom solutions to enhance your online presence and boost revenue.",
-    image: Ecom,
+      "Our 3D art services include high-quality modeling, texturing, and rendering for games, animations, and product visualization. We provide detailed and realistic 3D assets that stand out.",
+    image: Cat2.src,
   },
   {
-    title: "Digital Marketing",
+    title: "BRB Screens",
     description:
-      "Our digital marketing strategies, including SEO, social media, and PPC, help businesses reach their target audience effectively, driving engagement and conversions through tailored campaigns.",
-    image: Digital,
+      "Customize your stream with creative and engaging BRB (Be Right Back) screens that enhance your viewer experience while maintaining your unique brand identity.",
+    image: Cat3.src,
   },
   {
-    title: "Graphic Design",
+    title: "Stream Alerts",
     description:
-      "We deliver creative design solutions for branding, logos, and marketing materials that captivate and engage your audience. Our designs are crafted to reflect your brand’s identity and values.",
-    image: Graphic,
+      "Get personalized stream alerts that notify your audience in style. From follower alerts to donations, we design eye-catching alerts to match your brand.",
+    image: Cat4.src,
   },
   {
-    title: "IT Consultation",
+    title: "Sonic Art",
     description:
-      "Benefit from our IT consultation services, where we provide expert advice and strategic planning to help you navigate complex technology landscapes and achieve your business objectives.",
-    image: Consult,
+      "Dive into the world of Sonic with unique fan art, custom characters, and artwork that captures the essence of this iconic franchise. Perfect for collectors and enthusiasts.",
+    image: Cat5.src,
   },
   {
-    title: "Staff Augmentation",
+    title: "Custom Characters",
     description:
-      "Enhance your team with our staff augmentation services, providing you with skilled professionals to meet your project demands and drive your business forward.",
-    image: Staff,
+      "We create custom characters for your games, animations, or personal projects. From concept to creation, our team delivers characters full of personality and creativity.",
+    image: Cat6.src,
+  },
+  {
+    title: "Logo Design",
+    description:
+      "Get a custom-designed logo that perfectly represents your brand. Whether you're a streamer, business, or creative, we craft logos that leave a lasting impression.",
+    image: Cat7.src,
+  },
+  {
+    title: "Anime Characters",
+    description:
+      "Bring your favorite anime characters to life or create original ones with our anime art services. We specialize in creating detailed and vibrant anime-style characters.",
+    image: Cat8.src,
   },
 ];
 
@@ -53,9 +68,9 @@ const Services = () => (
   <section className="py-20 bg-[#EFEAE3]">
     <div className="mx-5">
       <h1 className="text-[2.5rem] font-sans font-bold text-center mb-20">
-        Explore Our Services
+        Categories
       </h1>
-      <div className="grid mx-auto md:w-full md:grid-cols-2 lg:max-w-none lg:grid-cols-3 gap-5">
+      <div className="grid mx-auto md:w-full md:grid-cols-2 lg:max-w-none lg:grid-cols-4 gap-5">
         {cards.map((card, index) => (
           <div key={index}>
             <div

@@ -29,20 +29,21 @@ const ContentSection: React.FC<TextProps> = ({
   }, []);
   return (
     <div className="flex overflow-hidden flex-col lg:flex-row items-center md:px-8">
-      <div className="flex text-xl lg:w-2/3 flex-col">
-        <h1 className="text-3xl font-bold font-sans" data-aos='fade-right'>{heading}</h1>
-        <p className="text-gray-700 mt-10 font-sans" data-aos='fade-right'>{text}</p>
-        <p className="text-gray-700 font-sans mt-3" data-aos='fade-right'>{text1}</p>
-      </div>
       <div data-aos='fade-left' className={`w-${imageWidth}`}>
         <Image
-          className="rounded-lg mt-5 mx-5"
+          className="rounded-lg mt-5 mx-10"
           src={imageUrl}
           alt={imageAlt}
           width={imageWidth} // Ensure this is a number
           height={imageHeight} // Ensure this is a number
         />
       </div>
+      <div className="flex text-xl lg:w-2/3 flex-col">
+        <h1 className="text-3xl font-bold font-sans" data-aos='fade-right'>{heading}</h1>
+        <p className="text-gray-700 mt-10 font-sans" data-aos='fade-right'>{text}</p>
+        <p className="text-gray-700 font-sans mt-3" data-aos='fade-right'>{text1}</p>
+      </div>
+      
     </div>
   );
 };
