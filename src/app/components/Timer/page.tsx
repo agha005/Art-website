@@ -6,7 +6,7 @@ import Image from 'next/image'; // Ensure to import Image from Next.js
 // Sample data for the offer
 const content = {
   title: 'Exclusive Offer!',
-  description: 'Buy One Get One Free Offer!',
+  description: 'Get a logo and banner free on first order!',
   image: Card1, // Replace with your image path
 };
 

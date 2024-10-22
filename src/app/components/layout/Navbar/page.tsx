@@ -25,16 +25,16 @@ const Navbar = () => {
       <ul className="hidden md:flex space-x-4 rounded-[3rem] px-10 py-4 ml-[23rem]">
         <li className="relative overflow-hidden border border-gray-300 px-7 py-2 rounded-full font-semibold text-base group">
           <a
-            href="#page-3"
+            href="#home"
             className="relative z-10 text-white font-bold transition-colors duration-300"
           >
-            Work
+            Home
           </a>
           <span className="absolute bottom-0 left-0 w-full h-full bg-[#1ea39c] z-0 transition-transform duration-300 transform scale-y-0 group-hover:scale-y-100 origin-bottom rounded-full"></span>
         </li>
         <li className="relative overflow-hidden border border-gray-300 px-6 py-2 rounded-full font-semibold text-base group">
           <a
-            href="#"
+            href="#portfolio"
             className="relative z-10 text-white font-bold transition-colors duration-300"
           >
             Portfolio
@@ -43,16 +43,16 @@ const Navbar = () => {
         </li>
         <li className="relative overflow-hidden border border-gray-300 px-6 py-2 rounded-full font-semibold text-base group">
           <a
-            href="#"
+            href="#categories"
             className="relative z-10 text-white font-bold transition-colors duration-300"
           >
-            Contact
+            Categories
           </a>
           <span className="absolute bottom-0 left-0 w-full h-full bg-[#1ea39c] z-0 transition-transform duration-300 transform scale-y-0 group-hover:scale-y-100 origin-bottom rounded-full"></span>
         </li>
         <li className="relative overflow-hidden border border-gray-300 px-6 py-2 rounded-full font-semibold text-base group">
           <a
-            href="#"
+            href="#About"
             className="relative z-10 text-white font-bold transition-colors duration-300 "
           >
             About
@@ -81,16 +81,16 @@ const Navbar = () => {
         {/* Mobile Menu Links */}
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
-            href="#page-3"
+            href="#home"
             className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
-            Work
+            Home
           </a>
         </li>
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
-            href="#"
+            href="#portfolio"
             className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
@@ -99,16 +99,16 @@ const Navbar = () => {
         </li>
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
-            href="#"
+            href="#categories"
             className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >
-            Contact
+            Categories
           </a>
         </li>
         <li className="relative text-2xl px-4 py-4 rounded-full font-semibold">
           <a
-            href="#"
+            href="#About"
             className="text-white hover:text-[#1ea39c]"
             onClick={toggleNav}
           >

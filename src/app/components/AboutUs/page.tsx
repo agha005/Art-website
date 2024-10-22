@@ -21,40 +21,35 @@ const skills = [
     title: "Anime Character",
     description: "Expertise in Designing Art and anime Character.",
     image: Animecharacter, // Assign image directly
-    originalPrice: "$2000",
-    discountedPrice: "$250",
+    discountedPrice: "$250 to $500",
   },
   {
     color: "text-yellow-500",
     title: "Sonic Character",
     description: "Leading teams and managing projects effectively.",
     image: Sonic, // Assign image directly
-    originalPrice: "$1500",
-    discountedPrice: "$300",
+    discountedPrice: "$300 to $650",
   },
   {
     color: "text-blue-500",
     title: "2D Art",
     description: "Using data to make informed decisions.",
     image: Twod, // Assign image directly
-    originalPrice: "$900",
-    discountedPrice: "$450",
+    discountedPrice: "$450 to $850",
   },
   {
     color: "text-pink-500",
     title: "3D Art",
     description: "Optimizing online presence for businesses.",
     image: Threed, // Assign image directly
-    originalPrice: "$1200",
-    discountedPrice: "$320",
+    discountedPrice: "$320 to $900",
   },
   {
     color: "text-purple-500",
     title: "Gaming Character",
     description: "Understanding the business and developing strategies.",
     image: Gaming, // Assign image directly
-    originalPrice: "$2300",
-    discountedPrice: "$230",
+    discountedPrice: "$230 to $500",
   },
 ];
 
@@ -64,7 +59,7 @@ const AboutUs = () => {
   }, []);
 
   return (
-    <section className="overflow-x-hidden">
+    <section id="About" className="overflow-x-hidden">
       {/* Top Categories Section */}
       <div className="bg-[#EFEAE3] pb-4">
         <h2 className="text-[2.5rem] font-bold mx-10 mb-5 flex items-center">
@@ -97,10 +92,7 @@ const AboutUs = () => {
               {/* Pricing section */}
               <div className="mt-4">
                 <span className="text-lg font-bold text-green-600">
-                  {skill.discountedPrice}{" "}
-                </span>
-                <span className="line-through ml-2 text-gray-500">
-                  {skill.originalPrice}{" "}
+                  <span className="text-black">Price: </span> {skill.discountedPrice}{" "}
                 </span>
               </div>
             </div>

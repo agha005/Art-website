@@ -65,7 +65,7 @@ const cards = [
 ];
 
 const Services = () => (
-  <section className="py-20 bg-[#EFEAE3]">
+  <section id="categories" className="py-20 bg-[#EFEAE3]">
     <div className="mx-5">
       <h1 className="text-[2.5rem] font-sans font-bold text-center mb-20">
         Categories
