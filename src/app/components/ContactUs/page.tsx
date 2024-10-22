@@ -20,8 +20,9 @@ const Contact = () => {
     },
   ];
 
+
   return (
-    <div className="flex flex-col bg-[#EFEAE3] lg:flex-row gap-4">
+    <div id="page-3" className="flex flex-col bg-[#EFEAE3] lg:flex-row gap-4">
       <form className="flex-2 mx-3 lg:mx-12 max-w-3xl md:mx-auto bg-white shadow-md rounded-xl px-8 pt-6 pb-8 mb-20 mt-20">
         <h1 className="text-5xl font-bold mb-10">
           Request for Project Proposal

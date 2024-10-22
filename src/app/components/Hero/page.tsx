@@ -11,7 +11,7 @@ const Hero = () => {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative" id="home">
       {/* Background Image */}
       <Image
         className="absolute top-0 left-0 w-full h-full filter blur-lg object-cover"
@@ -47,8 +47,8 @@ const Hero = () => {
             src={Saske}
             alt="not available"
             data-aos="fade-left" data-aos-delay="300"
-            height={400}
-            width={400}
+            height={200}
+            width={250}
           />
           <Image
             src={Sophia}
