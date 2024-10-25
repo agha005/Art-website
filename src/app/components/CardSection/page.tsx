@@ -45,7 +45,7 @@ const PageThree = () => {
   ];
 
   return (
-    <div id="page3" className="bg-[#EFEAE3] py-16 text-center">
+    <div id="page3" className=" py-16 rounded-t-[2rem] text-center bg-[#272727] bg-opacity-85">
       <div className="grid gap-8 mx-5 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map((card, index) => (
           <div

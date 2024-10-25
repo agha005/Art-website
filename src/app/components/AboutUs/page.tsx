@@ -61,7 +61,7 @@ const AboutUs = () => {
   return (
     <section id="About" className="overflow-x-hidden">
       {/* Top Categories Section */}
-      <div className="bg-[#EFEAE3] pb-4">
+      <div className="pb-4 bg-[#272727] rounded-b-[2rem] bg-opacity-85">
         <h2 className="text-[2.5rem] font-bold mx-10 mb-5 flex items-center">
           <FaHotjar className="text-red-500 mr-2" /> {/* Icon styling */}
           Hot Selling
@@ -74,7 +74,7 @@ const AboutUs = () => {
             <div
               key={index}
               data-aos="fade-up"
-              className="bg-white p-2 rounded-lg shadow-md hover:shadow-lg transition"
+              className="bg-black p-2 rounded-lg shadow-md hover:shadow-lg transition"
             >
               {/* Render the image if available */}
               {skill.image && (
@@ -86,13 +86,13 @@ const AboutUs = () => {
               )}
 
               {/* Skill title and description */}
-              <h3 className="text-xl font-bold mb-2">{skill.title}</h3>
-              <p>{skill.description}</p>
+              <h3 className="text-xl text-white font-bold mb-2">{skill.title}</h3>
+              <p className="text-white">{skill.description}</p>
 
               {/* Pricing section */}
               <div className="mt-4">
                 <span className="text-lg font-bold text-green-600">
-                  <span className="text-black">Price: </span> {skill.discountedPrice}{" "}
+                  <span className="text-white">Price: </span> {skill.discountedPrice}{" "}
                 </span>
               </div>
             </div>
@@ -101,7 +101,7 @@ const AboutUs = () => {
       </div>
 
       {/* About Section */}
-      <div className="flex py-20 bg-[#EFEAE3] flex-col mt-10 lg:flex-row items-center">
+      <div className="flex py-20 rounded-t-[2rem] rounded-b-[2rem] bg-opacity-85 bg-[#272727] flex-col mt-10 lg:flex-row items-center">
         <div data-aos="fade-right" className="mx-20">
           <Image
             src={About}
@@ -118,13 +118,13 @@ const AboutUs = () => {
           >
             About Us
           </h2>
-          <p data-aos="fade-left" className="text-lg mb-4">
+          <p data-aos="fade-left" className="text-lg text-white mb-4">
             We are a passionate team of artists and creators dedicated to
             bringing your visions to life. With a rich blend of artistic skills
             and innovative thinking, we offer a diverse range of creative
             solutions tailored to your unique needs.
           </p>
-          <p data-aos="fade-left" className="text-lg">
+          <p data-aos="fade-left" className="text-lg text-white">
             From stunning graphic designs to captivating illustrations, our team
             combines technical expertise with artistic flair. We strive to help
             you express your ideas and connect with your audience through

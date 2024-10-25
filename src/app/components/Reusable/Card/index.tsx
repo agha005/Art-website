@@ -9,10 +9,10 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ title, description, icon: Icon }) => {
   return (
-    <div className="card p-6 bg-white shadow-md rounded-lg flex flex-col items-center">
+    <div className="card p-6 bg-black text-white shadow-md rounded-lg flex flex-col items-center">
       <Icon size={40} className="text-[#6cd6d1] mb-4" />
-      <h2 className="text-xl font-semibold mb-2">{title}</h2>
-      <p className="text-gray-600">{description}</p>
+      <h2 className="text-2xl text-[#62c6c6] font-bold mb-2">{title}</h2>
+      <p className="text-[#fffeff]">{description}</p>
     </div>
   );
 };

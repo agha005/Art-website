@@ -2,7 +2,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Anime, Sophia, Saske } from "@/Assets/images/index"; // Import your character image
+import { Sophia, Saske } from "@/Assets/images/index"; // Import your character image
 import Image from "next/image";
 
 const Hero = () => {
@@ -13,14 +13,14 @@ const Hero = () => {
   return (
     <div className="relative" id="home">
       {/* Background Image */}
-      <Image
+      {/* <Image
         className="absolute top-0 left-0 w-full h-full filter blur-lg object-cover"
         src={Anime}
         alt="background image"
-      />
+      /> */}
 
       {/* Main Content */}
-      <div className="flex lg:flex-row flex-col justify-center items-center h-screen relative z-10 bg-black bg-opacity-50">
+      <div className="flex lg:flex-row flex-col justify-center items-center h-screen relative z-10">
         <div className="w-2/3 mb-10 lg:mt-[4rem] mt-5 mx-10 md:mt-[3rem]">
           <h1
             data-aos="fade-right"
