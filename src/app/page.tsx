@@ -14,7 +14,7 @@ import Timer from './components/Timer/page';
 
 function App() {
   return (
-    <main id="main" className="relative moving-background">
+    <main id="main" className="relative moving-background bg-fixed bg-black bg-opacity-60 overflow-hidden">
       {/* Content Wrapper */}
       <div className="content">
         {/* {loading && <Loader />} */}

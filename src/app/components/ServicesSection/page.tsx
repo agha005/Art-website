@@ -65,10 +65,10 @@ const cards = [
 ];
 
 const Services = () => (
-  <section id="categories" className="py-20 bg-[#EFEAE3]">
+  <section id="categories" className="py-20 bg-[#272727] bg-opacity-85">
     <div className="mx-5">
-      <h1 className="text-[2.5rem] font-sans font-bold text-center mb-20">
-        Categories
+      <h1 className="text-[2.5rem] text-white font-mono font-bold text-center mb-20">
+        CATEGORIES
       </h1>
       <div className="grid mx-auto md:w-full md:grid-cols-2 lg:max-w-none lg:grid-cols-4 gap-5">
         {cards.map((card, index) => (

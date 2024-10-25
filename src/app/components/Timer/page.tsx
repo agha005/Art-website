@@ -30,7 +30,7 @@ const OfferWithTimer = () => {
   const seconds = timeLeft % 60;
 
   return (
-    <section className="flex lg:flex-row flex-col py-20 bg-gray-100">
+    <section className="flex lg:flex-row flex-col py-20 bg-[#272727] bg-opacity-85">
       {/* Image Section */}
       <div className="lg:w-1/2 flex items-center justify-center">
         <div className="relative w-full mx-10 h-96">
@@ -45,9 +45,9 @@ const OfferWithTimer = () => {
       </div>
 
       {/* Offer and Timer Section */}
-      <div className="lg:w-1/2 flex flex-col items-start justify-center p-8">
-        <h2 className="text-4xl font-bold mb-4 text-gray-800">{content.title}</h2>
-        <p className="mb-6 text-lg text-gray-700">{content.description}</p>
+      <div className="lg:w-1/2 flex flex-col text-white items-start justify-center p-8">
+        <h2 className="text-4xl font-bold mb-4">{content.title}</h2>
+        <p className="mb-6 text-lg">{content.description}</p>
         <div className="text-2xl font-semibold mb-2">
           Time Left: {days}d {hours}h {minutes}m {seconds}s
         </div>

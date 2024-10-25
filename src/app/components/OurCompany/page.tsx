@@ -13,7 +13,7 @@ const PageThree = () => {
   const imageAlt = "Art Tonic Studios Team";
 
   return (
-    <div id="portfolio" className="relative rounded-xl bg-[#EFEAE3] py-16">
+    <div id="portfolio" className="relative text-white bg-[#272727] bg-opacity-85 py-16">
       <div className="mx-5">
         <ContentSection
           heading={heading}

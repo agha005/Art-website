@@ -4,23 +4,25 @@
 
 /* global.css */
 .bg-fixed {
-  background-image: url('/src/Assets/images/animebg.webp'); /* Ensure the path is correct */
+  position: relative; /* Positioning context for pseudo-element */
+  min-height: 100vh; /* Makes sure the background covers the entire screen */
+}
+
+.bg-fixed::before {
+  content: ""; /* Empty content for the background image */
+  background-image: url("../Assets/images/bgimage.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; /* Ensures the image stays fixed while the content scrolls */
+  background-attachment: fixed; /* Ensures the image stays fixed */
+  position: absolute; /* Positioning the background */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  /* filter: blur(3px); Apply blur effect to the background image */
+  z-index: -1; /* Send the background behind the content */
 }
-
-
-/* @keyframes backgroundMove {
-  0% {
-    background-position: 0% 0%;
-  }
-  100% {
-    background-position: 100% 100%;
-  }
-} */
-
 
 /* Example text with moving animation */
 #moving-text {
@@ -77,6 +79,12 @@
 }
 
 .neon {
-  text-shadow: 0 0 2px #00FFFF, 0 0 1px #00FFFF, 0 0 4px #00FFFF, 
-               0 0 60px #00FFFF, 0 0 50px #00FFFF;
+  text-shadow: 0 0 2px #00ffff, 0 0 1px #00ffff, 0 0 4px #00ffff,
+    0 0 60px #00ffff, 0 0 50px #00ffff;
+}
+.neontext {
+  text-shadow: 0 0 2px #000000, /* Light glow effect */ 0 0 1px #000000,
+    /* Slightly stronger glow */ 0 0 10px #000000,
+    /* Stronger glow */ 0 0 60px #000000,
+    /* Very strong glow */ 0 0 40px #000000; /* Additional glow */
 }

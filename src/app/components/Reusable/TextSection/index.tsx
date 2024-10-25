@@ -39,9 +39,9 @@ const ContentSection: React.FC<TextProps> = ({
         />
       </div>
       <div className="flex text-xl lg:w-2/3 flex-col">
-        <h1 className="text-3xl font-bold font-sans" data-aos='fade-right'>{heading}</h1>
-        <p className="text-gray-700 mt-10 font-sans" data-aos='fade-right'>{text}</p>
-        <p className="text-gray-700 font-sans mt-3" data-aos='fade-right'>{text1}</p>
+        <h1 className="text-4xl font-bold font-sans text-blue-300 neon" data-aos='fade-right'>{heading}</h1>
+        <p className="mt-10 font-sans" data-aos='fade-right'>{text}</p>
+        <p className="font-sans mt-3" data-aos='fade-right'>{text1}</p>
       </div>
       
     </div>

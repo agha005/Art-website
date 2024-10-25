@@ -28,16 +28,16 @@ const testimonials = [
 ];
 
 const Testimonials = () => (
-  <section className="py-20 bg-[#EFEAE3]">
+  <section className="py-20 bg-[#272727] bg-opacity-85">
     <div className="container mx-auto">
-      <h2 className="text-[2rem] lg:text-[3rem] font-bold text-center mb-10">
+      <h2 className="text-[2rem] lg:text-[3rem] font-bold text-center mb-10 text-white neontext">
         What Our Clients Say
       </h2>
       <div className="grid grid-cols-1 mx-5 lg:mx-0 md:grid-cols-3 gap-8">
         {testimonials.map((testimonial) => (
           <div
             key={testimonial.id}
-            className="bg-[#b3ebe8] p-6 rounded-lg shadow-lg"
+            className="bg-[#000000] p-6 text-white rounded-lg shadow-lg"
           >
             <p className="text-lg mb-4">{testimonial.quote}</p>
             <p className="font-bold mb-2">{testimonial.author}</p>
